@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materialize Example</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <style>
+    .hero-panel {
+      height: 400px;
+      background-color: #8E7AB5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+    }
+    .card {
+      max-width: 300px;
+      margin: 20px auto;
+    }
+    .teal-custom {
+      background-color: #B784B7 !important;
+    }
+    .footer-custom {
+      background-color: #B784B7;
+    }
+    .sidenav .sidenav-close i {
+      color: #B784B7;
+    }
+    .brand-logo img {
+      padding-left: 20px; /* Adjust as needed */
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-wrapper teal-custom">
+      <a href="#" class="brand-logo"><img src="https://img.logoipsum.com/325.svg" alt="Logo"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Acerca de</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Acerca de</a></li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+
+  <div class="hero-panel">
+    <h1>Página de Allan Mendoza en Materialize</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://via.placeholder.com/300" alt="Placeholder image">
+          </div>
+          <div class="card-content" style="background-color: #EEA5A6;">
+            <span class="card-title">Card 1</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://via.placeholder.com/300" alt="Placeholder image">
+          </div>
+          <div class="card-content" style="background-color: #EEA5A6;">
+            <span class="card-title">Card 2</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://via.placeholder.com/300" alt="Placeholder image">
+          </div>
+          <div class="card-content" style="background-color: #EEA5A6;">
+            <span class="card-title">Card 3</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer footer-custom">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Footer Content</h5>
+          <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam beatae culpa assumenda nemo, eius cumque quis dicta natus, modi nisi tempora rem nostrum voluptas nam quisquam accusamus facere, itaque vel..</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Enlaces</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#">Enlace 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#">Enlace 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#">Enlace 3</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="#8E7AB5">
+      <div class="container">
+        © 2024 Página de Allan Mendoza en Materialize
+        <a class="grey-text text-lighten-4 right" href="#!">Más Enlaces</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+    });
+  </script>
+</body>
+</html>
